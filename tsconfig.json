@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "jsx": "react",
+    "allowJs": false, // true breaks declarations
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "outDir": "./dist/",
+    "noImplicitAny": true,
+    "target": "es5", // ts compile to es5 then webpack can minify it to build
+    "lib": [ "es2015", "dom" ], // Support es2015, and dom for some dom base library
+    "types" : [], // Specify "types": [] to disable automatic inclusion of @types packages. If turn on, its will ignore typings folder ?
+    "sourceMap": false // false to improve build performance
+  }
+}
